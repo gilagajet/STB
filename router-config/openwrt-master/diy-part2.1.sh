@@ -38,6 +38,6 @@ svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/
 
 
 ###Script
-wget https://raw.githubusercontent.com/gilagajet/gen/xray-wss/import_feeds.sh
-chmod +x import_feeds.sh
-./import_feeds.sh
+#wget https://raw.githubusercontent.com/gilagajet/gen/xray-wss/import_feeds.sh
+#chmod +x import_feeds.sh
+#./import_feeds.sh
