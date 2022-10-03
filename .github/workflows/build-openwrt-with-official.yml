@@ -13,7 +13,7 @@ on:
       openwrt_soc:
         description: "Select Amlogic SoC"
         required: false
-        default: "all"
+        default: "s905w"
         type: choice
         options:
           - all
@@ -59,12 +59,12 @@ on:
 
 env:
   REPO_URL: https://github.com/openwrt/openwrt
-  REPO_BRANCH: master
+  REPO_BRANCH: v22.03.0
   FEEDS_CONF: router-config/openwrt-master/feeds.conf.default
   CONFIG_FILE: router-config/openwrt-master/.config
   DIY_P1_SH: router-config/openwrt-master/diy-part1.sh
   DIY_P2_SH: router-config/openwrt-master/diy-part2.sh
-  TZ: America/New_York
+  TZ: Asia/Singapore
 
 jobs:
   build:
@@ -154,7 +154,7 @@ jobs:
           allowUpdates: true
           token: ${{ secrets.GH_TOKEN }}
           body: |
-            This is OpenWrt firmware for Amlogic s9xxx tv box
+            This is OpenWrt firmware for Amlogic TX3 Mini
             * Firmware information
             Default IP: 192.168.1.1
             Default username: root
