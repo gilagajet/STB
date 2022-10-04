@@ -58,8 +58,8 @@ on:
         default: "960"
 
 env:
-  REPO_URL: https://github.com/openwrt/openwrt
-  REPO_BRANCH: v22.03.0
+  REPO_URL: https://github.com/immortalwrt/immortalwrt.git
+  REPO_BRANCH: v21.02.1
   FEEDS_CONF: router-config/openwrt-master/feeds.conf.default
   CONFIG_FILE: router-config/openwrt-master/.config
   DIY_P1_SH: router-config/openwrt-master/diy-part1.sh
